@@ -1,0 +1,22 @@
+{
+  "name": "openwebapp-community-signup",
+  "version": "0.1.0",
+  "authors": [
+    "Andre Alves Garzia <contato@andregarzia.com>"
+  ],
+  "description": "An app to signup people on community mailing lists",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "handlebars": "~3.0.3",
+    "async": "~1.4.0"
+  }
+}
