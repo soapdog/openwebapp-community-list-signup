@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>Community Mailing List SignUp</title>
+		<meta charset="utf8">
+		
 		<script defer src="vendor/jquery/dist/jquery.min.js"></script>
 		<script defer src="vendor/handlebars/handlebars.min.js"></script>
 		<script defer src="vendor/async/dist/async.min.js"></script>
@@ -12,7 +14,7 @@
 			<div class="screen">
 			    <h1>{{communityName}}</h1>
 				<p>{{description}}</p>
-				<span>{{emailLabel}} <input type="email" name="email"></input></span>
+				<span>{{emailLabel}} <input id="email" type="email" name="email"></input></span>
 			    <div class="list">
 			      {{#each lists}}
 					  <input type="checkbox" class="mailing-list" name="{{id}}-list" value="{{id}}"> {{name}} </input><br>

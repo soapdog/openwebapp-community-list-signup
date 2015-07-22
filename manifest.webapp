@@ -1,0 +1,18 @@
+{
+  "version": "0.1",
+  "name": "Community SignUp",
+  "description": "App to sign up for community list.",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/app/img/icons/mortar-16.png",
+    "48": "/app/img/icons/mortar-48.png",
+    "128": "/app/img/icons/mortar-128.png"
+  },
+  "installs_allowed_from": ["*"],
+  "permissions": {
+    "systemXHR": {},
+    "network-http": {},
+    "network-tcp": {}
+  },
+  "type": "privileged"
+}

@@ -22,21 +22,46 @@ function goErrorScreen() {
 // Subscribing routines
 
 function getWantedLists() {
-	var checkedValues = $('.mailing-list:checked').map(function () {
+	var wantedLists = $('.mailing-list:checked').map(function () {
 		return this.value;
 	}).get();
-	
-	return checkedValues;
+
+	return wantedLists;
 }
 
 function doSubscribe() {
 	var wantedLists = getWantedLists();
-	
+	var data = { email: $("#email").val() };
+
 	console.log("Subscribing to: ");
 	console.log(wantedLists);
-	
-	async.eachSeries(wantedLists, function(item, callback) {
-		
+
+	$.ajaxSetup({
+		xhrFields: {
+			mozSystem: true
+		}
+	});
+
+	async.eachSeries(wantedLists, function (item, callback) {
+
+		var url = "https://lists.mozilla.org/subscribe/" + item;
+
+		console.log("url", url);
+		console.log("data", data);
+
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: data,
+			success: function (data, msg) {
+				console.log("msg", msg);
+				callback();
+			},
+			error: function (xhr, msg) {
+				callback(msg);
+			}
+
+		});
 	});
 
 }
