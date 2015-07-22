@@ -17,6 +17,7 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "handlebars": "~3.0.3",
-    "async": "~1.4.0"
+    "async": "~1.4.0",
+    "purecss": "~0.6.0"
   }
 }
