@@ -4,7 +4,9 @@
   "description": "App to sign up for community list.",
   "launch_path": "/index.html",
   "icons": {
-    "256": "/logo256.png"
+    "256": "/logo256.png",
+    "128": "/logo128.png",
+    "60": "/logo60.png"
   },
   "installs_allowed_from": ["*"],
   "permissions": {
