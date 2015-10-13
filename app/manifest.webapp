@@ -4,9 +4,7 @@
   "description": "App to sign up for community list.",
   "launch_path": "/index.html",
   "icons": {
-    "16": "/app/img/icons/mortar-16.png",
-    "48": "/app/img/icons/mortar-48.png",
-    "128": "/app/img/icons/mortar-128.png"
+    "256": "/logo256.png"
   },
   "installs_allowed_from": ["*"],
   "permissions": {

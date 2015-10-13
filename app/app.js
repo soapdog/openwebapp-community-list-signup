@@ -67,6 +67,8 @@
                     type: "POST",
                     url: url,
                     data: data,
+                    crossDomain: true,
+                    dataType: "html",
                     xhrFields: {
                         mozSystem: true
                     },
