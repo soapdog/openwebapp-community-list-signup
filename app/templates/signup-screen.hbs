@@ -1,0 +1,27 @@
+    <header class="fixed">
+        <h1>{{communityName}}</h1>
+    </header>
+    <article class="content scrollable header">
+        <p>{{description}}</p>
+        <form>
+        <p><input id="email" type="email" name="email" placeholder="{{emailLabel}} "></input></p>
+        <section data-type="list">
+        <ul data-type="edit">
+            {{#each lists}}
+                <li>
+                    <label class="pack-checkbox">
+                        <input type="checkbox" class="mailing-list" name="{{id}}-list" value="{{id}}"></input>
+                        <span></span>
+                    </label>
+                    <a href="#">
+                        <p>{{id}}</p>
+                        <p>{{name}} </p>
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+        </section>
+        </form>
+        <br>
+        <button class="recommend go-subscribe-action">{{subscribeButtonLabel}}</button>
+    </article>
