@@ -1,6 +1,6 @@
 var config = {
 	communityName: "Mozilla Brasil",
-	description: "Assine as listas da comunidade brasileira",
+	description: "Assine as listas de email da comunidade brasileira!",
 	emailLabel: "e-mail",
     progressLabel: "Assinando:",
 	subscribeButtonLabel: "Assinar",
@@ -12,6 +12,6 @@ var config = {
 		{id: "webapps-pt-br", name: "Sobre Open Web Apps App"},
 		{id: "webmaker-brasil", name: "Projeto Webmaker"}
 	],
-	successMsg: "Bem vindo a comunidade! Não se esqueça de verificar os emails de confirmação",
+	successMsg: "Bem vindo a comunidade! Não se esqueça de seguir as instruções dos emails de confirmação!",
 	errorMsg: "Não foi possível assinar as listas :-("
 }

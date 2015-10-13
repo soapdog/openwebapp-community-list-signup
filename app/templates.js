@@ -16,9 +16,9 @@ this["SignUpApp"]["templates"]["progress-screen"] = Handlebars.template({"compil
 
   return "<header class=\"fixed\">\n    <h1>"
     + alias3(((helper = (helper = helpers.communityName || (depth0 != null ? depth0.communityName : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"communityName","hash":{},"data":data}) : helper)))
-    + "</h1>\n</header>\n<article class=\"content scrollable header\">\n    <div class=\"center\">\n        <i class=\"fa fa-hourglass-half fa-5x fa-spin\"></i>\n    </div>\n    <p>"
+    + "</h1>\n</header>\n<article class=\"content scrollable header\">\n    <div class=\"center\">\n        <i class=\"fa fa-hourglass-half fa-5x fa-spin\"></i>\n        <br>\n        <p>"
     + alias3(((helper = (helper = helpers.progressLabel || (depth0 != null ? depth0.progressLabel : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"progressLabel","hash":{},"data":data}) : helper)))
-    + " <span id=\"currentList\"></span>...</p>\n</article>\n";
+    + " <span id=\"currentList\"></span>...</p>\n    </div>\n</article>\n";
 },"useData":true});
 this["SignUpApp"]["templates"]["signup-screen"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
